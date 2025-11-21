@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Owner Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create New Account</h1>
+        <div class="form-box">
+            <form id="createAccountForm">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+                
+                <label>Shop ID:</label>
+                <input type="text" id="shopId" required>
+                
+                <label>Shop Logo:</label>
+                <input type="file" id="shopLogo" accept="image/*" required>
+                
+                <label>Password:</label>
+                <input type="password" id="password" required>
+                
+                <label>Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
+                
+                <button type="submit" class="rect-btn">Confirm</button>
+            </form>
+        </div>
+        <button class="back-btn" onclick="location.href='owner-login.html'">Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

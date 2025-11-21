@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Available Offers</h1>
+        <div class="form-box">
+            <label>Enter Category:</label>
+            <select id="filterCategory">
+                <option value="">All Categories</option>
+                <option value="Food">Food</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Services">Services</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <label>Enter City:</label>
+            <input type="text" id="filterCity">
+            
+            <button class="rect-btn" onclick="filterOffers()">Filter</button>
+        </div>
+        
+        <div id="customerOffersContainer"></div>
+        
+        <button class="back-btn" onclick="customerLogout()">Logout</button>
+    </div>
+    
+    <!-- Modal for Offer Details -->
+    <div id="offerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

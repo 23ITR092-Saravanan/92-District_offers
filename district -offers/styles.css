@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D3D3D3; /* Light grey */
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.circular-btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #808080; /* Grey */
+    border: 3px solid #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.circular-btn:hover {
+    background-color: #696969;
+    transform: scale(1.05);
+}
+
+.rect-btn {
+    background-color: #808080; /* Grey */
+    border: 2px solid #000;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.rect-btn:hover {
+    background-color: #696969;
+    transform: scale(1.02);
+}
+
+.back-btn {
+    background-color: #808080;
+    border: 2px solid #000;
+    padding: 10px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-btn:hover {
+    background-color: #696969;
+}
+
+.form-box {
+    background-color: #A9A9A9; /* Moderate grey */
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: 20px 0;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.form-box textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.offer-card {
+    background-color: #A9A9A9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: 20px 0;
+}
+
+.offer-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.offer-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    margin: 8px 0;
+    color: #222;
+}
+
+.offer-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.edit-btn, .delete-btn, .share-btn, .view-btn {
+    background-color: #808080;
+    border: 2px solid #000;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: #B22222;
+}
+
+.edit-btn:hover, .share-btn:hover, .view-btn:hover {
+    background-color: #696969;
+}
+
+.delete-btn:hover {
+    background-color: #8B0000;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    padding: 6px 15px;
+    font-size: 12px;
+}
+
+.comments-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #000;
+}
+
+.comment-form {
+    margin-bottom: 20px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.comment-item {
+    background-color: #D3D3D3;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.comment-actions button {
+    padding: 4px 10px;
+    font-size: 12px;
+    background-color: #808080;
+    border: 1px solid #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.comment-text {
+    color: #222;
+}
+
+.rating-section {
+    margin-top: 15px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.star {
+    color: #ccc;
+}
+
+.star.filled {
+    color: #FFD700;
+}
+
+.average-rating {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #A9A9A9;
+    margin: 5% auto;
+    padding: 30px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.close:hover {
+    color: #666;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+.error-message {
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+@media (max-width: 768px) {
+    .circular-btn {
+        width: 120px;
+        height: 120px;
+        font-size: 14px;
+    }
+    
+    .form-box {
+        padding: 20px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+}
